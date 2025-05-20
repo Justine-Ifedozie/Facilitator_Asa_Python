@@ -223,7 +223,6 @@ while first_menu:
     # Starting point after variables declaration
     print(menu_1)
     menu = int(input("Press a number to make a selection between 1 - 13: "))
-    print("Invalid input.")
 
     if menu >= 0 or menu <= 13:
          print("You entered an invalid option!! Kindly try again or press 0 to switch off your phone")
@@ -518,7 +517,7 @@ while first_menu:
                     case 3:
                         print(securitySettings)
                         securitysettings = int(input("Press a number to make a selection: "))                            
-                       print("Invalid input. Please enter a number.")
+                        print("Invalid input. Enter a number.")
                             
                         match securitysettings:
                             case 1:
@@ -545,22 +544,19 @@ while first_menu:
         case 7:
             dIVErt = True
             while dIVErt:
-            print("Call divert")
-            divert = int(input("Press 0 to return to the mainmenu: "))
-            print("Invalid input. Please enter a number.")
+                print("Call divert")
+                divert = int(input("Press 0 to return to the mainmenu: "))
 
                 match divert:
                     case 0:
                         dIVErt = False
                     case _:
                         print("Invalid input")
-
         case 8:
             gAMes = True
             while gAMes:
-                       print("Thanks for playing our Games")
-                    games = int(input("Press 0 to return to the mainmenu: "))
-                    print("Invalid input. Please enter a number.")
+                print("Thanks for playing our Games")
+                games = int(input("Press 0 to return to the mainmenu: "))
 
                 match games:
                     case 0:
@@ -585,3 +581,48 @@ while first_menu:
             rEMInders = True
             while rEMInders:
                 print("Reminders")
+                reminder = int(input("Press 0 to return to the mainmenu: "))
+                print("Invalid input. Please enter a number.")
+
+                match reminder:
+                    case 0:
+                        rEMInders = False
+                    case _:
+                        print("Invalid input")
+  
+  
+        case 11:
+            clOCK = True
+            while clOCK:
+                print(cLock)
+                clock = input("Press a number to make a selection: ")
+                match clock:
+                    case 1:
+                        print("Alarm clock")
+                    case 2:
+                        print("Clock settings")
+                    case 3:
+                        print("Date setting")
+                    case 4:
+                        print("Stopwatch")
+                    case 5:
+                        print("Countdown timer")
+                    case 6:
+                        print("Auto update of date and time")
+                    case 0:
+                        clOCK = False
+                    case _:
+                        print("Invalid input")
+
+
+        case 12:
+                print("Profiles")
+
+        case 13:
+                print("SIM services")
+
+        case 0:
+                first_menu = False
+ 
+ 
+ 
