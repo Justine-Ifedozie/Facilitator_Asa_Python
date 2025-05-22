@@ -11,5 +11,5 @@ class TestArithmeticFunction(TestCase):
                 expected = 9
                 self.assertEqual(actual, expected)
                 
-def test_that_arithmetic_function_returns_subtraction_correctly(self):
+        def test_that_arithmetic_function_returns_subtraction_correctly(self):
                 actual = subtraction
