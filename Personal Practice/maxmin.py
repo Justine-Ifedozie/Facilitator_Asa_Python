@@ -1,2 +1,2 @@
-def get_maxmin(number):
-        444
+def get_maxmin(*number):
+        
