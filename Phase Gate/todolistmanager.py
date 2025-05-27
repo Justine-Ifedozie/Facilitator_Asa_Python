@@ -43,7 +43,7 @@ while todo:
 
 
                 case 4:
-                        print("Delete a task")
+                        list.remove(user_choice)
 
                 case 5:
                         todo = False

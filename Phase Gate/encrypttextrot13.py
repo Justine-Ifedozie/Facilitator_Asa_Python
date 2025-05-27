@@ -1,7 +1,7 @@
 
 user_input = input("Enter a text: ")
 
-get_encrypt_text(user_input)
+def get_encrypt_text(user_input):
 
-def get_text_converter(user_input):
-        alpha_a = 'A', alpha_b = B
+if user_input == 'A' or 'a':
+        
