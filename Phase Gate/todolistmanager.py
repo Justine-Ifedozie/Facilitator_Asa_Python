@@ -2,7 +2,9 @@
 
 def get_menu():
         display_menu = """
+__________________
 To-Do List Manager
+__________________
 1. Add a task
 2. View tasks
 3. Mark task as complete
@@ -34,8 +36,7 @@ while todo:
                                         proceed = False
 
                 case 2:
-                        print("View Tasks")
-                        print(list)
+                        print(f' Below is a list of {list}')
 
                 case 3:
                         print("Mark Task as complete")
@@ -46,6 +47,8 @@ while todo:
 
                 case 5:
                         todo = False
+                case _:
+                        print("Invalid Input")
 
 
 #print(list)
