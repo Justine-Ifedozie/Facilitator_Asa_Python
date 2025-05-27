@@ -1,7 +1,7 @@
 import todolistmanager
 from unittest import TestCase
 
-class TestCube (TestCase): 
+class TestTodolistmanager (TestCase): 
         def test_that_get_menu_function_exist(self)
                 todolistmanager.get_menu()
                 
