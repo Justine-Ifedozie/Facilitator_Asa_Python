@@ -1,0 +1,11 @@
+import todolistmanager
+from unittest import TestCase
+
+class TestCube (TestCase): 
+        def test_that_get_menu_function_exist(self)
+                todolistmanager.get_menu()
+                
+        def test_that__function_return_correct_answer(self):
+                actual = todolistmanager.get_menu(5)
+                expected = 
+                self.assertEqual(actual, expected)
