@@ -15,13 +15,21 @@ for index, value in enumerate(tuple):
         if index == 1:
                 second = value
 
-product = int(first * second)
 sentinel = 1
 
 while sentinel != -1:
+        product = int(first * second)
+
         user_guess = int(input(f"How much is {first} times {second} ?: "))
         if user_guess == product:
                 print("Very good!") 
+                tuple = get_computer_assisted()    
+                for index, value in enumerate(tuple):
+                        if index == 0:
+                                first = value
+                        if index == 1:
+                                second = value
+
         elif user_guess != product:
                 print("No. Please try again.") 
         sentinel = int(input("Enter -1 to end or any number to continue: "))
