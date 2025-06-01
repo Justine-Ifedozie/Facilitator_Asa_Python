@@ -14,9 +14,11 @@ def deposit(name, amount):
 def withdraw(name, amount):
         for account in accounts:
                 if account[0] == name:
-                        account[3] = account[3] - amount
-                        return account
-        
+                        if account[3] >= amount:
+                                account[3] = account[3] - amount
+                                return account
+                        else:
+                                return "Insufficient funds"
         
 def show_balance(name):
         for account in accounts:
